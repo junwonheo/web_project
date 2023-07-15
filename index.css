@@ -1,0 +1,20 @@
+body{
+    background-color:rgb(255, 255, 255);
+}
+header{
+    background-color: rgb(87, 212, 171);
+    height:100px;
+}
+nav{
+    background-color: bisque;
+    height:600px;
+    width:200px;
+}
+section{
+    background-color: blueviolet;
+    width:500px;
+}
+footer{
+    background-color: blue;
+    height:100px
+}
