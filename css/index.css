@@ -37,7 +37,7 @@ nav,section,aside{
     height:600px;
 }
 nav{
-    width:290px;
+    width:20%;
     display:grid;
     grid-template-rows: (5,1fr);
 }
@@ -57,7 +57,7 @@ nav{
 }
 section{
     background-color: blueviolet;
-    width:800px;
+    width:60%;
     display:grid;
     grid-template-rows: (2,1fr);
     grid-template-columns: repeat(2,1fr);
@@ -95,7 +95,7 @@ section{
     grid-column:2/3;
 }
 aside{
-    width:350px;
+    width:20%;
     display:grid;
     grid-template-rows: (5,1fr);
 }
