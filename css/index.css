@@ -26,26 +26,34 @@ nav{
     display:grid;
     grid-template-rows: (5,1fr);
 }
-.nav_b1{
+.nav_b1{       /*로그인*/
     background-color:rgb(239, 230, 199);
     text-align:center;
     padding-top:10px;
     font-size:20px;
     grid-row:1/2;
 }
-.nav_b2{
+#login{
+    position: right;
+    width:200px;
+}
+.nav_b2{        /*내정보*/
     background-color:rgb(233, 217, 163);
     text-align:center;
     padding-top:5px;
     font-size:20px;
     grid-row:2/6;
 }
+.nav_b2 a{
+    text-decoration: none;
+    color:black;
+}
 section{
     background-color: blueviolet;
     width:800px;
     display:grid;
     grid-template-rows: (2,1fr);
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
 }
 .secion_b1{
     background-color:rgb(246, 129, 238);
@@ -68,8 +76,8 @@ section{
     text-align:center;
     padding-top:5px;
     font-size:20px;
-    grid-row:1/2;
-    grid-column:3/4;
+    grid-row:2/3;
+    grid-column:1/2;
 }
 .secion_b4{
     background-color:rgb(243, 43, 230);
@@ -77,23 +85,7 @@ section{
     padding-top:5px;
     font-size:20px;
     grid-row:2/3;
-    grid-column:1/2;
-}
-.secion_b5{
-    background-color:rgb(173, 80, 167);
-    text-align:center;
-    padding-top:5px;
-    font-size:20px;
-    grid-row:2/3;
     grid-column:2/3;
-}
-.secion_b6{
-    background-color:rgb(99, 11, 93);
-    text-align:center;
-    padding-top:5px;
-    font-size:20px;
-    grid-row:2/3;
-    grid-column:3/4;
 }
 aside{
     width:350px;
