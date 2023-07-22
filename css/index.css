@@ -7,8 +7,22 @@ header{
     background-color:rgb(212, 245, 231);
     text-align:center;
     padding-top:5px;
-    font-size:20px;
+    font-size:30px;
     grid-column:1/2;
+}
+.header_b1 img{
+    width:80px;
+    height:80px;
+    float: left;
+    margin-left: 30px;
+}
+.header_b1 a{
+    text-decoration-line: none;
+    color: black;
+}
+.header_b1 h2{
+    font-size: 20px;
+    margin-top: 0px;
 }
 .header_b2{
     background-color:rgb(180, 240, 215);
@@ -17,12 +31,22 @@ header{
     font-size:30px;
     grid-column:2/6;
 }
+.header_b2 table td{
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 25px;
+    border-color: rgb(255, 255, 255);
+}
+.header_b2 a{
+    text-decoration: none;
+    color: black;
+}
 nav,section,aside{
     float:left;
     height:600px;
 }
 nav{
-    width:290px;
+    width:20%;
     display:grid;
     grid-template-rows: (5,1fr);
 }
@@ -33,19 +57,31 @@ nav{
     font-size:20px;
     grid-row:1/2;
 }
-.nav_b2{
+#login{
+    position: right;
+    width:200px;
+}
+.nav_b2{        /*내정보*/
     background-color:rgb(233, 217, 163);
     text-align:center;
     padding-top:5px;
     font-size:20px;
     grid-row:2/6;
 }
+.nav_b2 a{
+    text-decoration: none;
+    color:black;
+}
 section{
     background-color: blueviolet;
-    width:800px;
+    width:60%;
     display:grid;
     grid-template-rows: (2,1fr);
     grid-template-columns: repeat(2,1fr);
+}
+section a{
+    text-decoration-line: none;
+    color: black;
 }
 .secion_b1{
     background-color:rgb(246, 129, 238);
@@ -80,7 +116,7 @@ section{
     grid-column:2/3;
 }
 aside{
-    width:350px;
+    width:20%;
     display:grid;
     grid-template-rows: (5,1fr);
 }
@@ -104,41 +140,4 @@ aside{
     padding-top:5px;
     font-size:20px;
     grid-row:4/6;
-}
-table {
-    border-top: 1px solid #444444;
-    border-collapse: collapse;
-}
-
-tr {
-    border-bottom: 1px solid #444444;
-    padding: 10px;
-}
-
-td {
-    border-bottom: 1px solid #efefef;
-    padding: 10px;
-}
-
-table .even {
-    background: #efefef;
-}
-
-.text {
-    text-align: center;
-    padding-top: 20px;
-    color: #000000
-}
-
-.text:hover {
-    text-decoration: underline;
-}
-
-a:link {
-    color: #57A0EE;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
