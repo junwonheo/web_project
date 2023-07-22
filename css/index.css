@@ -31,6 +31,12 @@ header{
     font-size:30px;
     grid-column:2/6;
 }
+.header_b2 table td{
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 25px;
+    border-color: rgb(255, 255, 255);
+}
 nav,section,aside{
     float:left;
     height:600px;
