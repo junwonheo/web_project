@@ -37,6 +37,10 @@ header{
     padding-right: 25px;
     border-color: rgb(255, 255, 255);
 }
+.header_b2 a{
+    text-decoration: none;
+    color: black;
+}
 nav,section,aside{
     float:left;
     height:600px;
