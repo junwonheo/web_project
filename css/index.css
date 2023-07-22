@@ -79,6 +79,10 @@ section{
     grid-template-rows: (2,1fr);
     grid-template-columns: repeat(2,1fr);
 }
+section a{
+    text-decoration-line: none;
+    color: black;
+}
 .secion_b1{
     background-color:rgb(246, 129, 238);
     text-align:center;
