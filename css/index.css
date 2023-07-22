@@ -3,7 +3,6 @@ header{
     display:grid;
     grid-template-columns: repeat(5,1fr);
 }
-
 .header_b1{
     background-color:rgb(212, 245, 231);
     text-align:center;
@@ -48,12 +47,20 @@ nav{
     font-size:20px;
     grid-row:1/2;
 }
-.nav_b2{
+#login{
+    position: right;
+    width:200px;
+}
+.nav_b2{        /*내정보*/
     background-color:rgb(233, 217, 163);
     text-align:center;
     padding-top:5px;
     font-size:20px;
     grid-row:2/6;
+}
+.nav_b2 a{
+    text-decoration: none;
+    color:black;
 }
 section{
     background-color: blueviolet;
