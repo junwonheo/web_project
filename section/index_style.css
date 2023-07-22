@@ -1,0 +1,15 @@
+#header{
+    background-color: aqua;
+}
+.logo{
+    width: 120px;
+}
+.logo > h1{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.logo > h2{
+    font-size: 15px;
+    margin-top: 0px;
+    text-align: right;
+}
