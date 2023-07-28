@@ -4,6 +4,20 @@
         <meta charset="UTF-8">
         <title>WebProject</title>
         <link rel="stylesheet" href="css/index.css">
+        <script>
+            function popup_sign_up(){
+                var url="nav/sign_up.html";
+                var name = "회원가입";
+                var option = "width = 500, height = 500, top = 100, left = 200, location = no";
+                window.open(url,name,option);
+            }
+            function popup_find_id_pw(){
+                var url="nav/find_id_pw.html";
+                var name = "회원가입";
+                var option = "width = 500, height = 500, top = 100, left = 200, location = no";
+                window.open(url,name,option);
+            }
+        </script>
     </head>
     <body>
         <div id="first">
@@ -17,10 +31,10 @@
                 <div class="header_b2">
                     <table>
                         <tr>
-                            <td>웹해킹</td>
-                            <td>리버싱</td>
-                            <td>포너블</td>
-                            <td>암호학</td>
+                            <td><a href="section/webhack.html">웹해킹</a></td>
+                            <td><a href="section/reverse.html">리버싱</a></td>
+                            <td><a href="section/pwn.html">포너블</a></td>
+                            <td><a href="section/crypto.html">암호학</a></td>
                         </tr></table>
                 </div>
             </header>
@@ -31,58 +45,44 @@
                     <input id='user_id' type="text" placeholder="id">
                     <input id='user_pw'type="password" placeholder="pw">
                     <input type="submit" value="로그인" id="login"><br>
-                    <button onclick="location.href='sign_up.html'">회원가입</button>
-                    <button onclick="location.href='find_id_pw.html'">아이디/비밀번호 찾기</button>
+                    <button onclick="popup_sign_up()">회원가입</button>
+                    <button onclick="popup_find_id_pw()">아이디/비밀번호 찾기</button>
                 </div>
                 <div class="nav_b2">
-                    <p><a href="writing.html">내가 쓴 글 </a></p>
-                    <p><a href="comment.html">댓글 단 글</a></p>
-                    <p><a href="user_script.html">내 스크랩</a></p>
+                    <p><a href="nav/writing.html">내가 쓴 글</a></p>
+                    <p><a href="nav/comment.html">댓글 단 글</a></p>
+                    <p><a href="nav/user_script.html">내 스크랩</a></p>
                 </div>
             </nav>
 
-<section><!--내용-->
+            <section><!--내용-->
                 <div class="secion_b1">
-                    <a href="file:///C:/Users/웹해킹.html" style="font-size: 24px">웹 해킹 게시판</a>   
-                    <a href="file:///C:/Users/test1.html" style="font-size: 14px">웹 해킹 글 제목 1</a>
-                    <a href="file:///C:/Users/test2.html" style="font-size: 14px">웹 해킹 글 제목 2</a>
-                    <a href="file:///C:/Users/test3.html" style="font-size: 14px">웹 해킹 글 제목 3</a>
+                    <a href="file:///C:/Users/웹해킹.html" style="font-size: 24px">웹 해킹 게시판</a><br>   
+                    <a href="file:///C:/Users/test1.html" style="font-size: 14px; color: inherit; text-decoration: none;">웹 해킹 글 제목 1</a><br>
+                    <a href="file:///C:/Users/test2.html" style="font-size: 14px; color: inherit; text-decoration: none;">웹 해킹 글 제목 2</a><br>
+                    <a href="file:///C:/Users/test3.html" style="font-size: 14px; color: inherit; text-decoration: none;">웹 해킹 글 제목 3</a><br>
                 </div>
 
                 <div class="secion_b1">
-                    <a href="file:///C:/Users/리버싱.html" style="font-size: 24px">리버싱 게시판</a>
-                    <a href="file:///C:/Users/test1.html" style="font-size: 14px">리버싱 글 제목 1</a>
-                    <a href="file:///C:/Users/test2.html" style="font-size: 14px">리버싱 글 제목 2</a>
-                    <a href="file:///C:/Users/test3.html" style="font-size: 14px">리버싱 글 제목 3</a>
+                    <a href="file:///C:/Users/리버싱.html" style="font-size: 24px">리버싱 게시판</a><br>
+                    <a href="file:///C:/Users/test1.html" style="font-size: 14px">리버싱 글 제목 1</a><br>
+                    <a href="file:///C:/Users/test2.html" style="font-size: 14px">리버싱 글 제목 2</a><br>
+                    <a href="file:///C:/Users/test3.html" style="font-size: 14px">리버싱 글 제목 3</a><br>
                 </div>
 
                 <div class="secion_b1">
-                    <a href="file:///C:/Users/포너블.html" style="font-size: 24px">포너블 게시판</a>
-                    <a href="file:///C:/Users/test1.html" style="font-size: 14px">포너블 글 제목 1</a>
-                    <a href="file:///C:/Users/test2.html" style="font-size: 14px">포너블 글 제목 2</a>
-                    <a href="file:///C:/Users/test3.html" style="font-size: 14px">포너블 글 제목 3</a>
+                    <a href="file:///C:/Users/포너블.html" style="font-size: 24px">포너블 게시판</a><br>
+                    <a href="file:///C:/Users/test1.html" style="font-size: 14px">포너블 글 제목 1</a><br>
+                    <a href="file:///C:/Users/test2.html" style="font-size: 14px">포너블 글 제목 2</a><br>
+                    <a href="file:///C:/Users/test3.html" style="font-size: 14px">포너블 글 제목 3</a><br>
                 </div>
 
                 <div class="secion_b1">
-                    <a href="file:///C:/Users/시스템 해킹.html" style="font-size: 24px">시스템 해킹 게시판</a>
-                    <a href="file:///C:/Users/test1.html" style="font-size: 14px">시스템 해킹 글 제목 1</a>
-                    <a href="file:///C:/Users/test2.html" style="font-size: 14px">시스템 해킹 글 제목 2</a>
-                    <a href="file:///C:/Users/test3.html" style="font-size: 14px">시스템 해킹 글 제목 3</a>
-                </div>
-
-                <div class="secion_b1">
-                    <a href="file:///C:/Users/암호학.html" style="font-size: 24px">암호학 게시판</a>
-                    <a href="file:///C:/Users/test1.html" style="font-size: 14px">암호학 글 제목 1</a>
-                    <a href="file:///C:/Users/test2.html" style="font-size: 14px">암호학 글 제목 2</a>
-                    <a href="file:///C:/Users/test3.html" style="font-size: 14px">암호학 글 제목 3</a>
-                </div>
-
-                <div class="secion_b1">
-                    <a href="file:///C:/Users/포렌식.html" style="font-size: 24px">포렌식 게시판</a>                    
-                    <a href="file:///C:/Users/test1.html" style="font-size: 14px">포렌식 글 제목 1</a>
-                    <a href="file:///C:/Users/test2.html" style="font-size: 14px">포렌식 글 제목 2</a>
-                    <a href="file:///C:/Users/test3.html" style="font-size: 14px">포렌식 글 제목 3</a>
-                </div>
+                    <a href="file:///C:/Users/암호학.html" style="font-size: 24px">암호학 게시판</a><br>
+                    <a href="file:///C:/Users/test1.html" style="font-size: 14px">암호학 글 제목 1</a><br>
+                    <a href="file:///C:/Users/test2.html" style="font-size: 14px">암호학 글 제목 2</a><br>
+                    <a href="file:///C:/Users/test3.html" style="font-size: 14px">암호학 글 제목 3</a><br>
+                </div>                
 
             </section>
 
@@ -94,9 +94,15 @@
                 </div>
                 <div class="aside_b2">
                     <p>HOT 게시물</p>
+                    <a href="file:///C:/Users/test1.html" style="font-size: 14px; color: inherit; text-decoration: none;">글 제목 1</a><br>
+                    <a href="file:///C:/Users/test2.html" style="font-size: 14px; color: inherit; text-decoration: none;">글 제목 2</a><br>
                 </div>
+                
                 <div class="aside_b3">
                     <p>최근 게시물</p>
+                    <a href="file:///C:/Users/test1.html" style="font-size: 14px; color: inherit; text-decoration: none;">글 제목 1</a><br>
+                    <a href="file:///C:/Users/test2.html" style="font-size: 14px; color: inherit; text-decoration: none;">글 제목 2</a><br>
+                    <a href="file:///C:/Users/test3.html" style="font-size: 14px; color: inherit; text-decoration: none;">글 제목 3</a><br>
                 </div>
             </aside>
         </div>
