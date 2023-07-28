@@ -3,7 +3,7 @@
     <head>
         <meta charset='utf-8'>
         <title>WebProject</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="../css/index.css">
         <style>
             table {
                 border-top: 1px solid #444444;
@@ -49,12 +49,18 @@
             <header> <!--게시판 목차-->
                 <div class="header_b1">
                 <a href="../index.html">
-                <img src="./img/logo.png" />
+                <img src="../img/logo.png" />
                 보안쟁이 <br><h2>community</h2>
                 </a>
                 </div>
                 <div class="header_b2">
-                <p>웹해킹 리버싱 포너블 암호학</p>
+                    <table>
+                        <tr>
+                            <td><a href="../section/webhack.html">웹해킹</a></td>
+                            <td><a href="../section/reverse.html">리버싱</a></td>
+                            <td><a href="../section/pwn.html">포너블</a></td>
+                            <td><a href="../section/crypto.html">암호학</a></td>
+                        </tr></table>
                 </div>
             </header>
             
@@ -68,9 +74,9 @@
                     <button onclick="location.href='find_id_pw.html'">아이디/비밀번호 찾기</button>
                 </div>
                 <div class="nav_b2">
-                    <p><a href="writing.html">내가 쓴 글 </a></p>
-                    <p><a href="comment.html">댓글 단 글</a></p>
-                    <p><a href="user_script.html">내 스크랩</a></p>
+                    <p><a href="../nav/writing.html">내가 쓴 글 </a></p>
+                    <p><a href="../nav/comment.html">댓글 단 글</a></p>
+                    <p><a href="../nav/user_script.html">내 스크랩</a></p>
                 </div>
             </nav>
             
