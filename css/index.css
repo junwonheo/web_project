@@ -83,6 +83,31 @@ section a{
     text-decoration-line: none;
     color: black;
 }
+
+.section_page table{
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+}
+
+.section_page tr {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+}
+
+.section_page td {
+    border-bottom: 1px solid #efefef;
+    padding: 10px;
+}
+
+.text {
+    text-align: center;
+    padding-top: 20px;
+    color: #000000
+}
+
+.text:hover {
+    text-decoration: underline;
+}
 .secion_b1{
     background-color:rgb(246, 129, 238);
     text-align:center;
