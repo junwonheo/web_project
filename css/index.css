@@ -87,37 +87,15 @@ section a{
 .secion_b1 {
     background-color: #f0f0f0;
     text-align: center;
+    padding-top:5px;
     padding: 20px;
-    border-radius: 10px;
 }
 
 .secion_b1 {
     text-align: center;
 }
 
-.secion_b1 li {
-    list-style: none;
-    margin-bottom: 5px;
-}
 
-.secion_b1 li a {
-    display: block;
-    padding: 5px;
-    background-color: #f0f0f0;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.secion_b1 li:not(:first-child) a {
-    font-weight: normal;
-}
-
-.secion_b1 li a:hover {
-    background-color: #ddd;
-}
 
 body {
     display: flex;
