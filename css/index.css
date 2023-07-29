@@ -83,6 +83,31 @@ section a{
     text-decoration-line: none;
     color: black;
 }
+
+.section_page table{
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+}
+
+.section_page tr {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+}
+
+.section_page td {
+    border-bottom: 1px solid #efefef;
+    padding: 10px;
+}
+
+.text {
+    text-align: center;
+    padding-top: 20px;
+    color: #000000
+}
+
+.text:hover {
+    text-decoration: underline;
+}
 /*secion b1*/
 .secion_b1 {
     background-color: #f0f0f0;
@@ -131,14 +156,6 @@ body {
     background-color: #f7f7f7;
 }
 
-.aside_b3{
-    background-color:rgb(241, 184, 100);
-    text-align:center;
-    padding-top:5px;
-    font-size:20px;
-    grid-row:4/6;
-}
-
 aside{
     width:20%;
     display:grid;
@@ -154,14 +171,14 @@ aside{
 .aside_b2{
     background-color:rgb(246, 194, 117);
     text-align:center;
-    padding-top:15px;
+    padding-top:5px;
     font-size:20px;
     grid-row:2/4;
 }
 .aside_b3{
     background-color:rgb(241, 184, 100);
     text-align:center;
-    padding-top:15px;
+    padding-top:5px;
     font-size:20px;
     grid-row:4/6;
 }
