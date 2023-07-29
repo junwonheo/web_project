@@ -73,21 +73,29 @@ nav{
     color:black;
 }
 section{
-    width:80%;
+    background-color: blueviolet;
+    width:60%;
+    display:grid;
+    grid-template-rows: (2,1fr);
+    grid-template-columns: repeat(2,1fr);
 }
-.writing > h1{
-    text-align:center;
+section a{
+    text-decoration-line: none;
+    color: black;
 }
-table{
-    margin:auto;
+
+.section_page table{
     border-top: 1px solid #444444;
     border-collapse: collapse;
-    text-align: center;
-    
 }
-th{
+
+.section_page tr {
     border-bottom: 1px solid #444444;
+    padding: 10px;
 }
-th{
-    border-bottom: 1px solid #676666;
+
+.section_page td {
+    border-bottom: 1px solid #efefef;
+    padding: 10px;
 }
+
