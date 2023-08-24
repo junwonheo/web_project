@@ -20,20 +20,21 @@ else {echo"접속 성공<br>";
             $sql = mysqli_query($conn, "SELECT EXISTS (SELECT * from user WHERE user_email='$useremail') as success");
             $useremailcount = $sql->fetch_assoc();
             if($useremailcount['success']==1) {
-                echo "<script>alert('존재하는 이메일입니다.');</script>";
+                echo "<script>alert('존재하는 이메일입니다.');history.back();</script>";
             }
             else{
                 echo "이메일 통과<br>";
                 $sql = mysqli_query($conn, "SELECT EXISTS (SELECT * from user WHERE user_id='$username') as success");
                 $usernamecount = $sql->fetch_assoc();
                 if($usernamecount['success']==1) {
-                    echo "<script>alert('존재하는 아이디입니다.');</script>";
+                    echo "<script>alert('존재하는 아이디입니다.');history.back();</script>";
                 }
                 
                 else{
-                    $sql="INSERT INTO user(user_email, user_id, user_pw) VALUES('$useremail','$username','$password')";
+                    $encrypted_password = password_hash( $password, PASSWORD_DEFAULT);
+                    $sql="INSERT INTO user(user_email, user_id, user_pw) VALUES('$useremail','$username','$encrypted_password')";
                     if($conn->query($sql)){
-                        echo "successfully";
+                        echo "<script>alert('회원가입 성공.'); history.back();</script>";
                     }
                     else{
                         echo "erro";
@@ -43,7 +44,7 @@ else {echo"접속 성공<br>";
             }
         }
         else{
-            echo "<script>alert('비밀번호가 다릅니다.');</script>";
+            echo "<script>alert('비밀번호가 다릅니다.');history.back();</script>";
         }
     }
 }
