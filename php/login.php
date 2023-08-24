@@ -14,11 +14,10 @@ else {echo"접속 성공<br>";
         $password=$_POST["userpw"];
         $sql = mysqli_query($conn,"select * from user where user_id='$username'");
         $member = $sql->fetch_array();
-        $hash_pwd = $member['password'];
+        $hash_pwd = $member['user_pw'];
         echo "hi";
         if (password_verify($password, $hash_pwd)) {
-            $_SESSION['id'] = $member["id"];
-            $_SESSION['name'] = $member["name"];
+            $_SESSION['id'] = $member["user_id"];
         
             echo "<script>alert('로그인 성공!'); location.href='./index.html';</script>";
         } else {
