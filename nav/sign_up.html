@@ -6,24 +6,24 @@
         <link rel="stylesheet" href="css/sign_up.css">
     </head>
     <body>
-        <form id="sign_up">
+        <form id="sign_up"  action="../php/sign_up.php" method="post">
             <ul>
                 <h1>회원가입</h1>
                 <li>
                     <label for="umail">이메일</label>
-                    <input type="email" required>
+                    <input type="email" name="useremail" required>
                 </li>
                 <li>
                     <label for="uid">아이디</label>
-                    <input type="text" id="user_id" placeholder="3글자 이상 입력하세요." minlength="3" required>
+                    <input type="text" name="userid" placeholder="3글자 이상 입력하세요." minlength="3" required>
                 </li>
                 <li>
                     <label for="upw">비밀번호</label>
-                    <input type="password" id="user_pw" placeholder="(7~20)글자 입력하세요." minlength="7" maxlength="20" required>
+                    <input type="password" name="userpw" placeholder="(7~20)글자 입력하세요." minlength="7" maxlength="20" required>
                 </li>
                 <li>
                     <label for="upw2">비밀번호 확인</label>
-                    <input type="password" id="user_pw2" required>
+                    <input type="password" name="userpw2" required>
                 </li>
             </ul>
             <div id="sign_up_button">
@@ -31,5 +31,6 @@
                 <input type="submit" value="취소">
             </div>
         </form>
+        
     </body>
 </html>

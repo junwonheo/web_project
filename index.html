@@ -40,14 +40,16 @@
             </header>
             
             <nav> <!--로그인-->
-                <div class="nav_b1">
-                    <p>로그인</p>
-                    <input id='user_id' type="text" placeholder="id">
-                    <input id='user_pw'type="password" placeholder="pw">
-                    <input type="submit" value="로그인" id="login"><br>
-                    <button onclick="popup_sign_up()">회원가입</button>
-                    <button onclick="popup_find_id_pw()">아이디/비밀번호 찾기</button>
-                </div>
+                <form action="php/login.php" method="post">
+                    <div class="nav_b1">
+                        <p>로그인</p>
+                        <input id='user_id' name="userid" type="text" placeholder="id">
+                        <input id='user_pw' name="userpw" type="password" placeholder="pw">
+                        <input type="submit" value="로그인" id="login"><br>
+                        <button onclick="popup_sign_up()">회원가입</button>
+                        <button onclick="popup_find_id_pw()">아이디/비밀번호 찾기</button>
+                    </div>
+                </form>
                 <div class="nav_b2">
                     <p><a href="nav/writing.html">내가 쓴 글</a></p>
                     <p><a href="nav/comment.html">댓글 단 글</a></p>
