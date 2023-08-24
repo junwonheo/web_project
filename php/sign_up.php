@@ -31,7 +31,6 @@ else {echo"접속 성공<br>";
                 }
                 
                 else{
-                    $password = password_hash($password, PASSWORD_DEFAULT);
                     $sql="INSERT INTO user(user_email, user_id, user_pw) VALUES('$useremail','$username','$password')";
                     if($conn->query($sql)){
                         echo "successfully";
