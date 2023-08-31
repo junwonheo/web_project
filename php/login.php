@@ -18,7 +18,8 @@ if ($conn->connect_error) {
             $hash_pwd = $member['user_pw'];
             $hash_pwd = substr($hash_pwd,0,99);
             if (password_verify( $password, $hash_pwd )) {
-                echo "<script>alert('로그인 성공!');history.back();</script>";
+                session_start();
+                echo "<script>location.href='../index_login.html'</script>";
             } 
             else {
                 echo "<script>alert('아이디 혹은 비밀번호를 확인하세요.'); history.back();</script>";

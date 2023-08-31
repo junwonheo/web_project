@@ -34,7 +34,9 @@ else {echo"접속 성공<br>";
                     $encrypted_password = password_hash( $password, PASSWORD_DEFAULT);
                     $sql="INSERT INTO user(user_email, user_id, user_pw) VALUES('$useremail','$username','$encrypted_password')";
                     if($conn->query($sql)){
-                        echo "<script>alert('회원가입 성공.'); history.back();</script>";
+                        session_start();
+                        $_SESSION["userid"]=$username;
+                        echo "<script>alert('회원가입 성공.'); location.href='../index_login.html' </script>";
                     }
                     else{
                         echo "erro";

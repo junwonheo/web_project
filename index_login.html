@@ -1,0 +1,76 @@
+<?php 
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebProject</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="first">
+            <header> <!--게시판 목차-->
+                <div class="header_b1">
+                <a href="./index.html">
+                <img src="img/logo.png">
+                보안쟁이 <br><h2>community</h2>
+                </a>
+                </div>
+                <div class="header_b2">
+                    <table>
+                        <tr>
+                            <td><a href="section/webhack.html">웹해킹</a></td>
+                            <td><a href="section/reverse.html">리버싱</a></td>
+                            <td><a href="section/pwn.html">포너블</a></td>
+                            <td><a href="section/crypto.html">암호학</a></td>
+                        </tr></table>
+                </div>
+            </header>
+            
+            <nav> <!--로그인-->
+                    <div class="nav_b1">
+                    <form action="php/logout.php" method="post">
+                        <?php echo "{$_SESSION['userid']}님";?>
+                        <?php echo "hi";?>
+                        <input type="submit" value="로그아웃" id="logout"><br>
+                        </form>
+                    </div>
+                <div class="nav_b2">
+                    <p><a href="nav/writing.html">내가 쓴 글</a></p>
+                    <p><a href="nav/comment.html">댓글 단 글</a></p>
+                    <p><a href="nav/user_script.html">내 스크랩</a></p>
+                </div>
+            </nav>
+
+            <section><!--내용-->
+                <div class="secion_b1">
+                    <a href="section/webhack.html">웹해킹 게시판</a>
+                </div>
+                <div class="secion_b2">
+                    <a href="section/reverse.html">리버싱 게시판</a>
+                </div>
+                <div class="secion_b3">
+                    <a href="section/pwn.html">포너블 게시판</a>
+                </div>
+                <div class="secion_b4">
+                    <a href="section/crypto.html">암호학 게시판</a>
+                </div>
+            </section>
+
+            <aside><!--검색-->
+                <div class="aside_b1">
+                    <p>검색</p>
+                    <input type="text">
+                    <input type="button" onclick="location.href='./aside/search.html'" value="검색">
+                </div>
+                <div class="aside_b2">
+                    <p><a href="./aside/hot_contents.html" style="text-decoration: none; color: black;">HOT 게시물</a></p>
+                </div>
+                <div class="aside_b3">
+                    <p><a href="./aside/recent_contents.html" style="text-decoration: none; color: black;">최근 게시물</a></p>
+                </div>
+            </aside>
+        </div>
+    </body>
+</html>
