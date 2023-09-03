@@ -1,8 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['username'])){
-    
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -11,15 +9,21 @@ if(isset($_SESSION['username'])){
         <title>WebProject</title>
         <link rel="stylesheet" href="css/index.css">
         <script> 
+            function popup_login(){
+                var url="nav/login_logout/login.php";
+                var name = "로그인";
+                var option = "width = 300, height = 200, top = 100, left = 200, location = no";
+                window.open(url,name,option);
+            }
             function popup_sign_up(){
-                var url="nav/sign_up/sign_up.html";
+                var url="nav/sign_up/sign_up.php";
                 var name = "회원가입";
                 var option = "width = 500, height = 500, top = 100, left = 200, location = no";
                 window.open(url,name,option);
             }
             function popup_find_id_pw(){
                 var url="nav/find_id_pw.html";
-                var name = "회원가입";
+                var name = "아이디/비밀번호 찾기";
                 var option = "width = 500, height = 500, top = 100, left = 200, location = no";
                 window.open(url,name,option);
             }
@@ -46,21 +50,31 @@ if(isset($_SESSION['username'])){
             </header>
             
             <nav> <!--로그인-->
-                <div class="nav_b1">
-                    <p>로그인</p>
-                    <form method="post" action="./nav/login.php">
-                    <input id='user_id' type="text" placeholder="id">
-                    <input id='user_pw'type="password" placeholder="pw">
-                    <input type="submit" value="로그인" id="login"><br>
-                    </form>
-                    <!--회원가입-->
-                    <button onclick="popup_sign_up()">회원가입</button>
-                    <button onclick="popup_find_id_pw()">아이디/비밀번호 찾기</button>
+            <?php
+            if(isset($_SESSION['id'])){
+                echo <<<EOT
+                <div class='nav_b1'>
+                    <p>어서오세요, {$_SESSION['id']}님</p>
+                    <button onclick="location.href='nav/login_logout/logout.php'">로그아웃</button>
                 </div>
-                <div class="nav_b2">
-                    <p><a href="nav/writing.html">내가 쓴 글</a></p>
-                    <p><a href="nav/comment.html">댓글 단 글</a></p>
-                    <p><a href="nav/user_script.html">내 스크랩</a></p>
+                EOT;
+            }
+            else{
+                echo <<<EOT
+                <div class='nav_b1'>
+                    <p>로그인</p>
+                    <button onclick='popup_login()'>로그인</button>
+                    <!--회원가입-->
+                    <button onclick='popup_sign_up()'>회원가입</button>
+                    <button onclick='popup_find_id_pw()'>아이디/비밀번호 찾기</button>
+                </div>
+                EOT;
+            }
+            ?>
+                <div class='nav_b2'>
+                    <p><a href='nav/writing.html'>내가 쓴 글</a></p>
+                    <p><a href='nav/comment.html'>댓글 단 글</a></p>
+                    <p><a href='nav/user_script.html'>내 스크랩</a></p>
                 </div>
             </nav>
 
